@@ -1,4 +1,4 @@
-const testController1 = require('../Controller/TestController1')
+const testController1 = require('../controller/TestController1')
 const express = require('express');
 const routes = express.Router();
 
