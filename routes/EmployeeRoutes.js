@@ -1,5 +1,5 @@
 const express = require('express');
-const EmployeeController1 = require('../controller/EmployeeController');
+const EmployeeController1 = require('../Controller/EmployeeController');
 const routes = express.Router();
 
 routes.post('/Employee',EmployeeController1.createEmployee)
