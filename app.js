@@ -2,10 +2,13 @@ const express=require('express')
 const mongoose = require('mongoose')
 const cors = require('cors');
 const app=express();
-const PORT=3000;
+// const PORT=3000;
 app.use(express.json())
 app.use(express.urlencoded())
 app.use(cors())
+
+require('dotenv').config()
+const PORT = process.env.PORT || 3000;
 // app.get('/TestApi',((request,response)=>{
 //     response.send("Hello ,World!");
 // }))
@@ -169,7 +172,7 @@ app.use('/playList1',updateSong1)
 const createUserSignup=require('./routes/userSignupRoutes')
 app.use('/signup',createUserSignup)
 
-mongoose.connect('mongodb://localhost:27017/user',{
+mongoose.connect('mongodb+srv://om:om123@cluster0.9wpjnpj.mongodb.net/user?retryWrites=true&w=majority',{
     useNewUrlParser:true,
     useUnifiedTopology:true
 },(error)=>{
