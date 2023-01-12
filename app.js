@@ -20,25 +20,25 @@ app.use('/TestApi',TestRoutes.router)
 app.use('/TestApi1',TestRoutes.router1)
 
 // get Api with database connection
-const userRoutes = require('../Learning/routes/userRoutes')
+const userRoutes = require('./routes/userRoutes')
 app.use('/userApi',userRoutes)
 
 // get Api with database connection and with id
-const userRoutesById = require('../Learning/routes/userRoutes')
+const userRoutesById = require('./routes/userRoutes')
 app.use('/userApi',userRoutesById)
 
 // post Api with database connection
 
-const createUser= require('../Learning/routes/userRoutes')
+const createUser= require('./routes/userRoutes')
 app.use('/user',createUser)
 
 
 // delete user by using delete request
-const deleteUser= require('../Learning/routes/userRoutes')
+const deleteUser= require('./routes/userRoutes')
 app.use('/userApi',deleteUser)
 
 // update user by using update request
-const updateUser= require('../Learning/routes/userRoutes')
+const updateUser= require('./routes/userRoutes')
 app.use('/userApi',updateUser)
 
 // get data
