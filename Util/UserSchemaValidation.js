@@ -10,5 +10,4 @@ const userSchemaValidation = zod.object({
         isActive:zod.boolean(),  
     }).strict()
 })
-
 module.exports =userSchemaValidation;
