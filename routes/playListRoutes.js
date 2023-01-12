@@ -1,9 +1,9 @@
-const playListController = require('../controller/playListController');
+const playListController1 = require('../controller/playListController');
 const express = require('express');
 const routes = express.Router();
 
-routes.post('/playList', playListController.createPlayList);
-routes.put('/playList/:id', playListController.pushSongs);
-routes.get('/playList',playListController.getPlayList);
-routes.put('/playList1/:id', playListController.pullSongs);
+routes.post('/playList', playListController1.createPlayList);
+routes.put('/playList/:id', playListController1.pushSongs);
+routes.get('/playList',playListController1.getPlayList);
+routes.put('/playList1/:id', playListController1.pullSongs);
 module.exports = routes;

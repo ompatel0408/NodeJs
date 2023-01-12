@@ -1,8 +1,8 @@
 const express = require('express');
-const EmployeeController = require('../controller/EmployeeController');
+const EmployeeController1 = require('../controller/EmployeeController');
 const routes = express.Router();
 
-routes.post('/Employee',EmployeeController.createEmployee)
-routes.get('/Employee',EmployeeController.getAllEmployees)
-routes.get('/Employee1',EmployeeController.getAllEmployeeWithPopulate)
+routes.post('/Employee',EmployeeController1.createEmployee)
+routes.get('/Employee',EmployeeController1.getAllEmployees)
+routes.get('/Employee1',EmployeeController1.getAllEmployeeWithPopulate)
 module.exports = routes;
